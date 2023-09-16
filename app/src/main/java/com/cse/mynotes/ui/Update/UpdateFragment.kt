@@ -59,7 +59,7 @@ class UpdateFragment : BaseFragment<FragmentUpdateBinding>(FragmentUpdateBinding
 
         binding.btnupdate.setOnClickListener(View.OnClickListener {
 
-            val dateFormat = SimpleDateFormat("dd-MM-yyyy HH:mm a", Locale.US)
+            val dateFormat = SimpleDateFormat("dd-MM-yyyy hh:mm a", Locale.US)
             val calendar = Calendar.getInstance()
             val dateandtime = dateFormat.format(calendar.time)
 
