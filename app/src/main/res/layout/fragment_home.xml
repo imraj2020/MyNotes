@@ -3,11 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.Home.HomeFragment">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/mylinear2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="600dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/noteRCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_note">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/addbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/add_note"></ImageView>
+
+
+    </LinearLayout>
 
 </FrameLayout>

@@ -16,7 +16,7 @@
         android:paddingBottom="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etTitle"
+            android:id="@+id/etTitles"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:hint="Title"
@@ -35,7 +35,7 @@
         android:paddingBottom="5dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etBody"
+            android:id="@+id/etBodys"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:hint="Description"
@@ -46,8 +46,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnSave"
-        android:text="Save"
+        android:id="@+id/btnupdate"
+        android:text="Update"
         android:layout_gravity="center"/>
 
 </LinearLayout>
