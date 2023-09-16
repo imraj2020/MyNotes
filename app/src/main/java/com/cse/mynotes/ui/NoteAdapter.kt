@@ -50,7 +50,7 @@ class NoteAdapter @Inject constructor(
         holder.binding.TitleTv.text = contact.title
         holder.binding.bodyTv.text = contact.body
 
-        holder.binding.bodyTv.text = if (contact.body.length <= 100) {
+        holder.binding.bodyTv.text = if (contact.body.length <= 25) {
             contact.body
         } else {
             contact.body.substring(0, 25)
